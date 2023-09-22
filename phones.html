@@ -30,16 +30,21 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <div class="spinner-border text-dark" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
         <!-- Spinner End -->
+
 
         <!-- Navbar Start -->
         <div class="container-fluid nav-bar bg-transparent">
@@ -48,7 +53,7 @@
                     <div class="icon p-2 me-2">
                         <img class="img-fluid" src="img/new/1.png" alt="Icon" style="width: 30px; height: 30px;">
                     </div>
-                    <h1 class="m-0 text-dark">TechRenewalHub</h1>
+                    <h1 class="m-0 text-dark">E-Waste Facility Locator</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -67,45 +72,175 @@
             </nav>
         </div>
         <!-- Navbar End -->
-
-        <!-- Contact Start -->
+        <br>
+        <br>
         <div class="container-xxl py-5">
             <div class="container mid">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Login</h1>
-                    <div class="mid col-md-12">
-                        <div class="wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="row g-3">
-                                    <div class="col-md-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="username" placeholder="Username/email">
-                                            <label for="username">username/email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-floating">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                            <label for="password">password</label>
-                                        </div>
-                                    </div>                                    
-                                    <div class="col-md-12">
-                                        <div class="form-floating">
-                                            <span>Dont have and account? </span><a href="register.html" class="terms">Sign up</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-dark w-100 py-3" type="submit">Login</button>
-                                    </div>
-                                </div>
-                        </div>
-                </div>
-            </div>
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1000px;">
+
+        <table style="width:90%">
+            <div style="margin-left: 10%;">
+            <tr style="text-align: center;" class="m-0 text-dark">
+              <th><h6>Sr. No.</h6></th>
+              <th><h6>Categories of phones and accessories</h6></th>
+              <th><h6>Average life (in years)</h6></th>
+            </tr>
+            <tr style="text-align: center;">
+              <td>1</td>
+              <td><strong > Mobile Phones</strong><br><p> The most obvious source of e-waste in the phone category is the phones themselves. People regularly upgrade to newer models, leaving older phones to be discarded.</p></td>
+              <td>2 - 4</td>
+            </tr>
+            <tr style="text-align: center;">
+              <td>2</td>
+              <td><strong>Batteries</strong><br>
+                <p> Phone batteries have a limited lifespan and may need to be replaced or disposed of when they no longer hold a charge or become faulty.</p>
+            </td>
+              <td>3 - 4</td>
+            </tr>
+
+            <tr style="text-align: center;">
+                <td>3</td>
+                <td><strong>Chargers</strong>
+                <p>
+                    Wall chargers and car chargers can become e-waste when they are no longer compatible with the latest phone models or when they become damaged.
+                </p></td>
+                <td>13 - 20</td>
+              </tr>
+
+
+              <tr style="text-align: center;">
+                <td>4</td>
+                <td><strong> USB Cables</strong>
+                <p>
+                    USB cables used for charging and data transfer can wear out or become damaged and need to be replaced.
+                </p></td>
+                <td>10 - 15</td>
+              </tr>
+
+
+
+              <tr style="text-align: center;">
+                <td>5</td>
+                <td><strong> Headphones and Earbuds</strong>
+                <p>
+                    Wired or wireless headphones and earbuds can become e-waste when they stop working or are replaced with newer models.
+                </p></td>
+                <td>10 - 30</td>
+              </tr>
+
+
+
+
+              <tr style="text-align: center;">
+                <td>6</td>
+                <td><strong>Phone Cases</strong>
+                <p>
+                    Protective phone cases are often replaced for style or functionality reasons and can accumulate as e-waste.
+                </p></td>
+                <td>4 - 10</td>
+              </tr>
+
+
+
+              <tr style="text-align: center;">
+                <td>7</td>
+                <td><strong>Screen Protectors</strong>
+                <p>
+                    These thin protective layers for phone screens may need to be replaced when they become scratched or damaged.
+                </p></td>
+                <td>0 - 1</td>
+              </tr>
+
+
+
+              <tr style="text-align: center;">
+                <td>8</td>
+                <td><strong>SIM Cards</strong>
+                <p>
+                    While small, SIM cards can become obsolete or damaged and contribute to e-waste.
+                </p></td>
+                <td>1 - 5</td>
+              </tr>
+
+
+
+              <tr style="text-align: center;">
+                <td>9</td>
+                <td><strong> Selfie Sticks</strong>
+                <p>
+                    Selfie sticks and similar accessories can become e-waste when they are no longer used or break.
+                </p></td>
+                <td>10 - 12</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>10</td>
+                <td><strong>Portable Power Banks</strong>
+                <p>
+                    External battery packs or power banks can become e-waste when they no longer hold a charge or are replaced.
+                </p></td>
+                <td>2 - 4</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>11</td>
+                <td><strong> Phone Holders and Pop Sockets</strong>
+                <p>
+                    These accessories are often used for better grip and phone handling, but they can contribute to e-waste when they are discarded.
+                </p></td>
+                <td>4 - 8</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>12</td>
+                <td><strong>Wireless Chargers</strong>
+                <p>
+                    Wireless charging pads and stands can become e-waste when they become outdated or are no longer functional.
+                </p></td>
+                <td>2 - 3</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>13</td>
+                <td><strong>Phone Manuals and Packaging</strong>
+                <p>
+                    The user manuals, boxes, and packaging that come with phones and accessories can become waste when they are no longer needed.
+                </p></td>
+                <td>2 - 3</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>14</td>
+                <td><strong>Old Phone Screens</strong>
+                <p>
+                    When phone screens are replaced due to damage or upgrades, the old screens can contribute to e-waste.
+                </p></td>
+                <td>3 - 8</td>
+              </tr>
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+          </table>
         </div>
     </div>
-        <!-- Contact End -->
-        
+</div>
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid bg-dark text-white-50 footer pt-0 mt-0 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">

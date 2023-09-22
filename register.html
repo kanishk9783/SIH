@@ -7,6 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <script src="register.js"></script>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -30,6 +31,43 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script>
+    async function Adduser(){
+    const username= await document.getElementById('username').value;
+    const name=await document.getElementById('name').value;
+    const email=await document.getElementById('email').value;
+    const number=await document.getElementById('number').value;
+    const address=await document.getElementById('address').value;
+    const password=await document.getElementById('password').value;
+    const role=await document.getElementById('radio').value;
+    console.log(username);
+    console.log(name);
+    console.log(email);
+    console.log(number)
+    console.log(address)
+    console.log(password)
+    console.log(role)
+    try {
+        fetch("http://localhost:3000/user",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify({
+                username:username,
+                name:name,
+                email:email,
+                number:number,
+                address:address,
+                password:password,
+                role:role
+            })
+        })
+    } catch (error) {
+        console.log(error)
+    }
+}
+    </script>
 </head>
 
 <body>
@@ -61,6 +99,7 @@
                             <a href="index.html" class="nav-item nav-link active">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="e-waste-locator.html" class="nav-item nav-link">Collector</a>
+                            <a href="rules.html" class="nav-item nav-link">E-waste rules</a>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                             
                         </div>
@@ -86,7 +125,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="username" placeholder="name">
+                                        <input type="text" class="form-control" id="name" placeholder="name">
                                         <label for="username">Name</label>
                                     </div>
                                 </div>
@@ -121,15 +160,15 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 left">
-                                    <input type="radio" name="user" id="user" value="user">As user                               
-                                    <input type="radio" name="user" id="collector" value="collector">As collector                           
+                                    <input type="radio" name="user" id="radio" value="user">As user                               
+                                    <input type="radio" name="user" id="radio" value="collector">As collector                           
                                 </div>
                                 <div class="col-md-12 left">
                                     <input type="checkbox" name="terms" id="terms">
                                     <a href="terms.html" class="terms">Terms & Conditons</a>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Register</button>
+                                    <button class="btn btn-dark w-100 py-3" type="submit" onclick="Adduser()"Register</button>
                                 </div>
                             </div>
                         </div>

@@ -2,11 +2,12 @@ const express = require("express");
 const User = require("./Models/user.model");
 const app = express();
 const mongoose = require("mongoose");
-
+const cors=require("cors")
+app.use(cors)
 try {
   mongoose
     .connect(
-      "mongodb+srv://audichya9876:gssVNvRtSRU6v2Us@cluster0.iqh4blf.mongodb.net/?retryWrites=true&w=majority"
+      "mongodb+srv://audichya9876:FzkBz0lwgwIlXEzK@cluster0.iqh4blf.mongodb.net/?retryWrites=true&w=majority"
     )
     .then(() => {
       console.log("Connected to database!");

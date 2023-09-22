@@ -30,16 +30,21 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <div class="spinner-border text-dark" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
         <!-- Spinner End -->
+
 
         <!-- Navbar Start -->
         <div class="container-fluid nav-bar bg-transparent">
@@ -48,7 +53,7 @@
                     <div class="icon p-2 me-2">
                         <img class="img-fluid" src="img/new/1.png" alt="Icon" style="width: 30px; height: 30px;">
                     </div>
-                    <h1 class="m-0 text-dark">TechRenewalHub</h1>
+                    <h1 class="m-0 text-dark">E-Waste Facility Locator</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -67,45 +72,160 @@
             </nav>
         </div>
         <!-- Navbar End -->
-
-        <!-- Contact Start -->
+        <br>
+        <br>
         <div class="container-xxl py-5">
             <div class="container mid">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Login</h1>
-                    <div class="mid col-md-12">
-                        <div class="wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="row g-3">
-                                    <div class="col-md-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="username" placeholder="Username/email">
-                                            <label for="username">username/email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-floating">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                            <label for="password">password</label>
-                                        </div>
-                                    </div>                                    
-                                    <div class="col-md-12">
-                                        <div class="form-floating">
-                                            <span>Dont have and account? </span><a href="register.html" class="terms">Sign up</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-dark w-100 py-3" type="submit">Login</button>
-                                    </div>
-                                </div>
-                        </div>
-                </div>
-            </div>
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1000px;">
+        <table style="width:90%">
+            <div style="margin-left: 10%;">
+            <tr style="text-align: center;" class="m-0 text-dark">
+              <th><h6>Sr. No.</h6></th>
+              <th><h6>Categories of household appliances</h6></th>
+              <th><h6>Average life (in years)</h6></th>
+            </tr>
+            <tr style="text-align: center;">
+              <td>1</td>
+              <td><strong > Refrigerators</strong><br><p> When refrigerators break down or are replaced, they can become a significant source of e-waste due to their size and complexity.</p></td>
+              <td>10 - 15</td>
+            </tr>
+            <tr style="text-align: center;">
+              <td>2</td>
+              <td><strong>Freezers</strong><br>
+                <p> Stand-alone freezers, whether chest or upright, can also contribute to e-waste when they are no longer operational.</p>
+            </td>
+              <td>12 - 20</td>
+            </tr>
+
+            <tr style="text-align: center;">
+                <td>3</td>
+                <td><strong>Washing Machines</strong>
+                <p>
+                    Front-loading and top-loading washing machines can generate e-waste when they reach the end of their lifespan or become non-functional.
+                </p></td>
+                <td>10 - 14</td>
+              </tr>
+
+
+              <tr style="text-align: center;">
+                <td>4</td>
+                <td><strong>Clothes Dryers</strong>
+                <p>
+                    Electric or gas-powered clothes dryers can become e-waste when they are no longer in use or are replaced.
+                </p></td>
+                <td>10 - 13</td>
+              </tr>
+
+
+
+              <tr style="text-align: center;">
+                <td>5</td>
+                <td><strong>Dishwashers</strong>
+                <p>
+                    Dishwashers can contribute to e-waste when they stop working or are replaced by more efficient models.
+                </p></td>
+                <td>8 - 10</td>
+              </tr>
+
+
+
+
+              <tr style="text-align: center;">
+                <td>6</td>
+                <td><strong>Microwaves</strong>
+                <p>
+                    Microwave ovens can become e-waste when they no longer work or are replaced with newer models.
+                </p></td>
+                <td>6 - 7</td>
+              </tr>
+
+
+
+              <tr style="text-align: center;">
+                <td>7</td>
+                <td><strong>Air Conditioners</strong>
+                <p>
+                    Window air conditioners and central HVAC systems can generate e-waste when they are no longer functional or are replaced.
+                </p></td>
+                <td>15 - 20</td>
+              </tr>
+
+
+
+              <tr style="text-align: center;">
+                <td>8</td>
+                <td><strong>Heaters</strong>
+                <p>
+                    Electric or gas heaters, including space heaters and baseboard heaters, can contribute to e-waste when they are no longer needed or operational.
+                </p></td>
+                <td>6 - 15</td>
+              </tr>
+
+
+
+              <tr style="text-align: center;">
+                <td>9</td>
+                <td><strong>Vacuum Cleaners</strong>
+                <p>
+                    Vacuum cleaners, whether upright or handheld, can generate e-waste when they stop working or are replaced
+                </p></td>
+                <td>6 - 8</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>10</td>
+                <td><strong>Fans</strong>
+                <p>
+                    Electric fans, including ceiling fans and oscillating fans, can contribute to e-waste when they are no longer needed or are replaced.
+                </p></td>
+                <td>6 - 10</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>11</td>
+                <td><strong>Coffee Makers and Kettles</strong>
+                <p>
+                    Electric coffee makers and kettles can become e-waste when they stop working or are replaced.
+                </p></td>
+                <td>4 - 5</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>12</td>
+                <td><strong>Blenders and Food Processors</strong>
+                <p>
+                    Electric blenders and food processors can generate e-waste when they are no longer operational or are replaced.
+                </p></td>
+                <td>5 - 7</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>13</td>
+                <td><strong>Electric Shavers and Hair Dryers</strong>
+                <p>
+                    Personal grooming appliances can become e-waste when they stop working or are upgraded.
+                </p></td>
+                <td>2 - 7</td>
+              </tr>
+
+              <tr style="text-align: center;">
+                <td>14</td>
+                <td><strong>Electronic Thermostats</strong>
+                <p>
+                    Programmable thermostats can become e-waste when they are replaced with newer, more advanced models.
+                </p></td>
+                <td>8 - 10</td>
+              </tr>
+
+           
+
+        </div>
+          </table>
         </div>
     </div>
-        <!-- Contact End -->
-        
+</div>
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid bg-dark text-white-50 footer pt-0 mt-0 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
